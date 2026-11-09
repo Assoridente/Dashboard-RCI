@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.csv
+*.xlsx
+*.xls
+*.zip
+*.bak
+*.dump
+*.backup
+dados/
+backups/
+.DS_Store
+Thumbs.db
