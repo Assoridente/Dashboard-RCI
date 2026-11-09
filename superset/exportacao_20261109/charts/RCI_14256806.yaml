@@ -1,0 +1,74 @@
+slice_name: RCI
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 91__table
+  viz_type: big_number_total
+  slice_id: 14256806
+  matrixify_enable: false
+  matrixify_mode_columns: disabled
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_all_sort_by_columns: a_to_z
+  matrixify_topn_order_columns: true
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_mode_rows: disabled
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_all_sort_by_rows: a_to_z
+  matrixify_topn_order_rows: true
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_charts_per_row: 4
+  matrixify_cell_title_template: ''
+  metric:
+    expressionType: SQL
+    sqlExpression: CASE WHEN COUNT(*) = 1 THEN TRUNC(MAX(rci_preciso)::numeric, 3)
+      END
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: RCI
+    optionName: metric_a33e79e2-a76b-51e4-846f-5809d47e53b7
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 3
+    expressionType: SIMPLE
+    operator: ==
+    subject: projeto_id
+  - clause: WHERE
+    subject: competencia
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subtitle_font_size: 0.15
+  show_metric_name: false
+  metric_name_font_size: 0.15
+  y_axis_format: ',.3f'
+  time_format: smart_date
+  force_timestamp_formatting: false
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 19
+query_context: '{"datasource":{"id":91,"type":"table"},"force":false,"queries":[{"filters":[{"col":"projeto_id","op":"==","val":3},{"col":"competencia","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"CASE
+  WHEN COUNT(*) = 1 THEN TRUNC(MAX(rci_preciso)::numeric, 3) END","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"RCI","optionName":"metric_a33e79e2-a76b-51e4-846f-5809d47e53b7"}],"annotation_layers":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"91__table","viz_type":"big_number_total","slice_id":14256806,"matrixify_enable":false,"matrixify_mode_columns":"disabled","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_all_sort_by_columns":"a_to_z","matrixify_topn_order_columns":true,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_mode_rows":"disabled","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_all_sort_by_rows":"a_to_z","matrixify_topn_order_rows":true,"matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_charts_per_row":4,"matrixify_cell_title_template":"","metric":{"expressionType":"SQL","sqlExpression":"CASE
+  WHEN COUNT(*) = 1 THEN TRUNC(MAX(rci_preciso)::numeric, 3) END","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"RCI","optionName":"metric_a33e79e2-a76b-51e4-846f-5809d47e53b7"},"adhoc_filters":[{"clause":"WHERE","comparator":3,"expressionType":"SIMPLE","operator":"==","subject":"projeto_id"},{"clause":"WHERE","subject":"competencia","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"header_font_size":0.4,"subtitle_font_size":0.15,"show_metric_name":false,"metric_name_font_size":0.15,"y_axis_format":",.3f","time_format":"smart_date","force_timestamp_formatting":false,"conditional_formatting":[],"extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: 0
+uuid: 2f6d278d-dd1a-5b97-b659-331f3019760c
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

@@ -1,0 +1,99 @@
+slice_name: Resultado e fechamento mensal
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 91__table
+  viz_type: table
+  slice_id: 14256810
+  matrixify_enable: false
+  matrixify_mode_columns: disabled
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_all_sort_by_columns: a_to_z
+  matrixify_topn_order_columns: true
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_mode_rows: disabled
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_all_sort_by_rows: a_to_z
+  matrixify_topn_order_rows: true
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_charts_per_row: 3
+  matrixify_cell_title_template: ''
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup:
+    competencia: true
+    fechado_em: true
+    ultima_publicacao: true
+  metrics: []
+  all_columns:
+  - ano_mes
+  - label: RCI
+    sqlExpression: TRUNC(rci_preciso::numeric, 3)
+    expressionType: SQL
+  - resultado_meta
+  - fechado_em_brasilia
+  percent_metrics: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_qevkniskcp_k4u5azplqtq
+  - expressionType: SIMPLE
+    subject: competencia
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_xabsa6n4q09_bbsa5aifnft
+  order_by_cols:
+  - '["ano_mes", false]'
+  server_pagination: false
+  row_limit: 1000
+  table_timestamp_format: '%d/%m/%Y %H:%M'
+  include_search: false
+  allow_rearrange_columns: false
+  allow_render_html: true
+  column_config:
+    rci:
+      d3NumberFormat: ',.3f'
+  show_cell_bars: false
+  align_pn: false
+  color_pn: true
+  conditional_formatting: []
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 19
+query_context: '{"datasource":{"id":91,"type":"table"},"force":false,"queries":[{"filters":[{"col":"projeto_id","op":"==","val":3},{"col":"competencia","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["ano_mes",{"label":"RCI","sqlExpression":"TRUNC(rci_preciso::numeric,
+  3)","expressionType":"SQL"},"resultado_meta","fechado_em_brasilia"],"orderby":[["ano_mes",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"91__table","viz_type":"table","slice_id":14256810,"matrixify_enable":false,"matrixify_mode_columns":"disabled","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_all_sort_by_columns":"a_to_z","matrixify_topn_order_columns":true,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_mode_rows":"disabled","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_all_sort_by_rows":"a_to_z","matrixify_topn_order_rows":true,"matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_charts_per_row":3,"matrixify_cell_title_template":"","query_mode":"raw","groupby":[],"temporal_columns_lookup":{"competencia":true,"fechado_em":true,"ultima_publicacao":true},"metrics":[],"all_columns":["ano_mes",{"label":"RCI","sqlExpression":"TRUNC(rci_preciso::numeric,
+  3)","expressionType":"SQL"},"resultado_meta","fechado_em_brasilia"],"percent_metrics":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"projeto_id","operator":"==","comparator":3,"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_qevkniskcp_k4u5azplqtq"},{"expressionType":"SIMPLE","subject":"competencia","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_xabsa6n4q09_bbsa5aifnft"}],"order_by_cols":["[\"ano_mes\",
+  false]"],"server_pagination":false,"row_limit":1000,"table_timestamp_format":"%d/%m/%Y
+  %H:%M","include_search":false,"allow_rearrange_columns":false,"allow_render_html":true,"column_config":{"rci":{"d3NumberFormat":",.3f"}},"show_cell_bars":false,"align_pn":false,"color_pn":true,"conditional_formatting":[],"comparison_type":"values","extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: 0
+uuid: 371d55c7-d96b-50a8-93f4-7dd9a76c2fd1
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

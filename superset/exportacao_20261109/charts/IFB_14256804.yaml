@@ -1,0 +1,38 @@
+slice_name: IFB
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 91__table
+  slice_id: 179
+  viz_type: big_number_total
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+  extra_form_data: {}
+  dashboards:
+  - 19
+  metric:
+    expressionType: SQL
+    sqlExpression: CASE WHEN COUNT(*) = 1 THEN MAX(ifb) END
+    label: IFB
+    hasCustomLabel: true
+    optionName: metric_bfd4f2a7-e96a-5c5c-98cf-973a45fb0b24
+    datasourceWarning: false
+  header_font_size: 0.4
+  subtitle_font_size: 0.15
+  show_metric_name: false
+  y_axis_format: ',.4f'
+  time_format: smart_date
+  conditional_formatting: []
+  annotation_layers: []
+query_context: null
+cache_timeout: 0
+uuid: 83ca5c4e-f166-5f37-ac1e-5f218f5ed370
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

@@ -1,0 +1,14 @@
+database_name: Taiga_1
+sqlalchemy_uri: postgresql+psycopg2://USUARIO:SENHA@HOST:5432/BANCO
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: true
+allow_cvas: true
+allow_dml: true
+allow_file_upload: true
+extra: {}
+impersonate_user: false
+configuration_method: dynamic_form
+uuid: 6db20301-4ccd-43fb-b258-fd869624c340
+version: 1.0.0

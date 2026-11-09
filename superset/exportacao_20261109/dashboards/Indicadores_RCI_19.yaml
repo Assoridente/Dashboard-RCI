@@ -1,0 +1,408 @@
+dashboard_title: Indicadores RCI
+description: "Indicadores mensais do Salesforce. Somente compet\xEAncias encerradas,\
+  \ conferidas e explicitamente fechadas."
+css: ".navbar {\n    transition: opacity 0.5s ease;\n    opacity: 0.05;\n}\n.navbar:hover\
+  \ {\n    opacity: 1;\n}\n.chart-header .header{\n    font-weight: @font-weight-normal;\n\
+  \    font-size: 12px;\n}\n/*\nvar bnbColors = [\n    //rausch    hackb      kazan\
+  \      babu      lima        beach     tirol\n    '#ff5a5f', '#7b0051', '#007A87',\
+  \ '#00d1c1', '#8ce071', '#ffb400', '#b4a76c',\n    '#ff8083', '#cc0086', '#00a1b3',\
+  \ '#00ffeb', '#bbedab', '#ffd266', '#cbc29a',\n    '#ff3339', '#ff1ab1', '#005c66',\
+  \ '#00b3a5', '#55d12e', '#b37e00', '#988b4e',\n ];\n*/\n"
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: 1655442f-e960-4671-a3aa-34cadb49a59d
+position:
+  CHART-Gnr3CGqxrdlcR29L-V2KW:
+    children: []
+    id: CHART-Gnr3CGqxrdlcR29L-V2KW
+    meta:
+      chartId: 14256810
+      height: 50
+      sliceName: Resultado e fechamento mensal
+      uuid: 371d55c7-d96b-50a8-93f4-7dd9a76c2fd1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-i36RyVccyHWPxkJnQlMmp
+    type: CHART
+  CHART-HgCkVMekGU7G1LB7doKPQ:
+    children: []
+    id: CHART-HgCkVMekGU7G1LB7doKPQ
+    meta:
+      chartId: 14256804
+      height: 22
+      sliceName: IFB
+      uuid: 83ca5c4e-f166-5f37-ac1e-5f218f5ed370
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4lSuIShntzrZ91qIFhwW_
+    type: CHART
+  CHART-explore-14256799-1:
+    children: []
+    id: CHART-explore-14256799-1
+    meta:
+      chartId: 14256808
+      height: 37
+      sliceName: "Aus\xEAncias por m\xEAs"
+      uuid: f51028f0-36bc-5208-808d-ff04ef2c2a74
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-dL4SKBrxF0Rnolq6k0mLM
+    type: CHART
+  CHART-explore-14256800-1:
+    children: []
+    id: CHART-explore-14256800-1
+    meta:
+      chartId: 14256807
+      height: 50
+      sliceName: "Apura\xE7\xE3o das entregas do m\xEAs"
+      uuid: 9b9bd912-b08a-5b95-9492-4168409c6588
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Nsq-h_AouP-DRlWmGLiYT
+    type: CHART
+  CHART-qKgs77Oj2GE2yxs4_H50V:
+    children: []
+    id: CHART-qKgs77Oj2GE2yxs4_H50V
+    meta:
+      chartId: 14256809
+      height: 50
+      sliceName: "Entregas por m\xEAs"
+      uuid: e4de21d6-3be4-5419-b0ad-e3ec1b12a140
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Nsq-h_AouP-DRlWmGLiYT
+    type: CHART
+  CHART-rfzpIYClvQ2DIrojNEu5p:
+    children: []
+    id: CHART-rfzpIYClvQ2DIrojNEu5p
+    meta:
+      chartId: 14256806
+      height: 22
+      sliceName: RCI
+      uuid: 2f6d278d-dd1a-5b97-b659-331f3019760c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4lSuIShntzrZ91qIFhwW_
+    type: CHART
+  CHART-vDIsQ4j38VfQbyTFharvm:
+    children: []
+    id: CHART-vDIsQ4j38VfQbyTFharvm
+    meta:
+      chartId: 14256803
+      height: 22
+      sliceName: IES
+      uuid: 45e62b2f-16dd-5f60-b67a-5d4b08c80d34
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4lSuIShntzrZ91qIFhwW_
+    type: CHART
+  CHART-vGy_KNUHaWy-djsnBfkb2:
+    children: []
+    id: CHART-vGy_KNUHaWy-djsnBfkb2
+    meta:
+      chartId: 14256805
+      height: 22
+      sliceName: IAP
+      uuid: c2f2a764-5c40-592c-818a-2d8f6282e77a
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4lSuIShntzrZ91qIFhwW_
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-JW1T3zOFAZGMQJvHjg4kf:
+    children: []
+    id: DIVIDER-JW1T3zOFAZGMQJvHjg4kf
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-Wwvn3RDeAkhzNXeW9lY-Q:
+    children: []
+    id: DIVIDER-Wwvn3RDeAkhzNXeW9lY-Q
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-l1CLFWb0YwjvA5Y9pmRzW:
+    children: []
+    id: DIVIDER-l1CLFWb0YwjvA5Y9pmRzW
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - DIVIDER-Wwvn3RDeAkhzNXeW9lY-Q
+    - ROW-4lSuIShntzrZ91qIFhwW_
+    - ROW-i36RyVccyHWPxkJnQlMmp
+    - DIVIDER-l1CLFWb0YwjvA5Y9pmRzW
+    - ROW-Nsq-h_AouP-DRlWmGLiYT
+    - DIVIDER-JW1T3zOFAZGMQJvHjg4kf
+    - ROW-dL4SKBrxF0Rnolq6k0mLM
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Indicadores RCI
+    type: HEADER
+  MARKDOWN-3h12f4pQ0gLvPlZ9z4Yvd:
+    children: []
+    id: MARKDOWN-3h12f4pQ0gLvPlZ9z4Yvd
+    meta:
+      code: "### Publica\xE7\xE3o mensal\n\nO painel mostra somente meses encerrados\
+        \ e fechados ap\xF3s a importa\xE7\xE3o do relat\xF3rio final.\n\n**Use o\
+        \ filtro Compet\xEAncia (m\xEAs/ano)** para consultar um m\xEAs. Os cart\xF5\
+        es exibem os \xEDndices da compet\xEAncia escolhida.\n\nO m\xEAs corrente\
+        \ n\xE3o \xE9 publicado. A data de fechamento aparece na tabela de resultado\
+        \ mensal.\n\n**Fluxo:** importar o relat\xF3rio final \u2192 atualizar os\
+        \ dados \u2192 conferir \u2192 fechar a compet\xEAncia.\n\nCorre\xE7\xF5es\
+        \ de meses publicados geram uma nova vers\xE3o de fechamento."
+      height: 37
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-dL4SKBrxF0Rnolq6k0mLM
+    type: MARKDOWN
+  MARKDOWN-ULYS2lOCQBSC9RSNnRni_:
+    children: []
+    id: MARKDOWN-ULYS2lOCQBSC9RSNnRni_
+    meta:
+      code: "### Indicadores mensais do RCI\n\n| Indicador | Peso | Regra |\n| :---\
+        \ | :--- | :--- |\n| **IES \u2014 Entregas** | 40% | Itens marcados como n\xE3\
+        o entregues \xF7 itens planejados no m\xEAs. |\n| **IAP \u2014 Aus\xEAncias**\
+        \ | 30% | Dias de aus\xEAncia \xF7 (postos de trabalho \xD7 dias \xFAteis\
+        \ do m\xEAs). |\n| **IFB \u2014 Falhas** | 30% | Itens com falha \xF7 itens\
+        \ planejados no m\xEAs. |\n\n**RCI = 1 \u2212 (IES + IAP + IFB)** \xB7 Meta:\
+        \ **0,95**.\n\nOs itens pertencem ao m\xEAs do t\xE9rmino previsto das sprints\
+        \ fechadas. Os \xEDndices s\xE3o calculados pelos totais mensais.\n\nDias\
+        \ \xFAteis excluem s\xE1bados, domingos e feriados cadastrados do Rio de Janeiro.\
+        \ O RCI \xE9 exibido com duas casas decimais."
+      height: 50
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-i36RyVccyHWPxkJnQlMmp
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-4lSuIShntzrZ91qIFhwW_:
+    children:
+    - CHART-rfzpIYClvQ2DIrojNEu5p
+    - CHART-vGy_KNUHaWy-djsnBfkb2
+    - CHART-vDIsQ4j38VfQbyTFharvm
+    - CHART-HgCkVMekGU7G1LB7doKPQ
+    id: ROW-4lSuIShntzrZ91qIFhwW_
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Nsq-h_AouP-DRlWmGLiYT:
+    children:
+    - CHART-qKgs77Oj2GE2yxs4_H50V
+    - CHART-explore-14256800-1
+    id: ROW-Nsq-h_AouP-DRlWmGLiYT
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-dL4SKBrxF0Rnolq6k0mLM:
+    children:
+    - CHART-explore-14256799-1
+    - MARKDOWN-3h12f4pQ0gLvPlZ9z4Yvd
+    id: ROW-dL4SKBrxF0Rnolq6k0mLM
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-i36RyVccyHWPxkJnQlMmp:
+    children:
+    - MARKDOWN-ULYS2lOCQBSC9RSNnRni_
+    - CHART-Gnr3CGqxrdlcR29L-V2KW
+    id: ROW-i36RyVccyHWPxkJnQlMmp
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  label_colors: {}
+  chart_configuration:
+    '14256807':
+      id: 14256807
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 14256803
+        - 14256804
+        - 14256805
+        - 14256806
+        - 14256808
+        - 14256809
+        - 14256810
+    '14256808':
+      id: 14256808
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 14256803
+        - 14256804
+        - 14256805
+        - 14256806
+        - 14256807
+        - 14256809
+        - 14256810
+    '14256809':
+      id: 14256809
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 14256803
+        - 14256804
+        - 14256805
+        - 14256806
+        - 14256807
+        - 14256808
+        - 14256810
+    '14256810':
+      id: 14256810
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 14256803
+        - 14256804
+        - 14256805
+        - 14256806
+        - 14256807
+        - 14256808
+        - 14256809
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 14256803
+    - 14256804
+    - 14256805
+    - 14256806
+    - 14256807
+    - 14256808
+    - 14256809
+    - 14256810
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: false
+  native_filter_configuration:
+  - id: NATIVE_FILTER-VqzwZB9Ywt7_2bncayYmm
+    type: NATIVE_FILTER
+    name: "Compet\xEAncia (m\xEAs/ano)"
+    filterType: filter_select
+    description: Somente meses explicitamente fechados do Salesforce.
+    targets:
+    - column:
+        name: mes_rotulo
+      datasetUuid: 28a80528-6141-5528-a67d-f646fadf077b
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    controlValues:
+      sortAscending: false
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      creatable: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: mes_rotulo
+          op: IN
+          val:
+          - Set 26
+      filterState:
+        validateMessage: false
+        validateStatus: false
+        label: Set 26
+        value:
+        - Set 26
+        excludeFilterValues: true
+    cascadeParentIds: []
+    adhoc_filters:
+    - expressionType: SIMPLE
+      subject: projeto_id
+      operator: ==
+      comparator: 3
+      clause: WHERE
+    time_range: No filter
+    sortMetric: null
+    requiredFirst:
+      target:
+        checked: false
+        id: filters_NATIVE_FILTER-VqzwZB9Ywt7_2bncayYmm_controlValues_defaultToFirstItem
+        prefixCls: ant-checkbox
+        className: ant-wave-target css-14vilre
+        disabled: false
+        type: checkbox
+      nativeEvent:
+        isTrusted: true
+    chartsInScope:
+    - 14256803
+    - 14256804
+    - 14256805
+    - 14256806
+    - 14256807
+    - 14256808
+    - 14256809
+    - 14256810
+    tabsInScope: []
+  filter_bar_orientation: HORIZONTAL
+  chart_customization_config: []
+  show_chart_timestamps: false
+  color_scheme_domain: []
+  shared_label_colors: []
+  map_label_colors:
+    Entregues: '#1FA8C9'
+    "N\xE3o entregues": '#454E7C'
+  default_filters: '{}'
+theme_uuid: null
+version: 1.0.0

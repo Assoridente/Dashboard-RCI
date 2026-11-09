@@ -35,6 +35,7 @@ sql/
   operacao/                  Carga, conferência e exemplos de fechamento
 superset/
   configuracao.md            Dataset, métricas, filtro e gráficos
+  exportacao_20261109/        Configuração exportada com conexão parametrizada
 ```
 
 ## Indicadores
@@ -68,4 +69,6 @@ As capturas mostram setembro de 2026 após a revisão das ausências, com RCI `0
 Os scripts de instalação adaptam uma base PostgreSQL com as fontes do Taiga e o calendário legado já existentes. Execute os blocos completos no SQL Lab conforme [operação](docs/operacao.md). Configure os parâmetros e confira o mês antes de executar o fechamento.
 
 O pacote reúne código de estrutura e documentação, com capturas agregadas do dashboard. As planilhas de colaboradores e as cargas com registros individuais permanecem no ambiente operacional.
+
+A [exportação do Superset](superset/exportacao_20261109) contém os oito gráficos, o dataset e o layout registrados em 09/11/2026. Para restaurar, configure a conexão PostgreSQL no ambiente de destino e siga as orientações de [configuração](superset/configuracao.md).
 

@@ -20,8 +20,8 @@ Os prints desta publicação foram capturados no painel com `Set 26` aplicado. O
 - O texto explicativo do painel ainda cita duas casas decimais. O card e a tabela já exibem o RCI truncado em três casas. A documentação registra essa diferença.
 - O texto de sprints é derivado da dimensão atual. Ele pode refletir renomeações posteriores ao fechamento.
 - O calendário preenche datas futuras, mas a lista de feriados entregue cobre até dezembro de 2026.
-- A publicação reúne SQLs e configuração documentada. A exportação antiga do dashboard não representa os ajustes de novembro.
+- A publicação inclui a exportação de 09/11/2026, com URI de conexão substituída por parâmetros de exemplo e parâmetros extras esvaziados.
 
 ## Escopo da validação
 
-Os SQLs 01, 02, 03 e o fechamento mensal foram exercitados anteriormente em ambiente PostgreSQL local com dados sintéticos. Na operação do Superset foram conferidos os carregamentos, as revisões de agosto e setembro e o truncamento exibido no painel. A preparação deste repositório verificou os arquivos, os links locais e as capturas. A instalação completa em um banco vazio e a importação de um dashboard a partir de um novo arquivo de exportação não foram executadas nesta publicação.
+Os SQLs 01, 02, 03 e o fechamento mensal foram exercitados anteriormente em ambiente PostgreSQL local com dados sintéticos. Na operação do Superset foram conferidos os carregamentos, as revisões de agosto e setembro e o truncamento exibido no painel. A preparação deste repositório verificou os arquivos, os links locais, as capturas e as expressões dos YAMLs exportados. A instalação completa em um banco vazio e a importação do dashboard em outro ambiente não foram executadas nesta publicação.

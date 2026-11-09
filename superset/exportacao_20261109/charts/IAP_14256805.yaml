@@ -1,0 +1,38 @@
+slice_name: IAP
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 91__table
+  slice_id: 178
+  viz_type: big_number_total
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+  extra_form_data: {}
+  dashboards:
+  - 19
+  metric:
+    expressionType: SQL
+    sqlExpression: CASE WHEN COUNT(*) = 1 THEN MAX(iap) END
+    label: IAP
+    hasCustomLabel: true
+    optionName: metric_a87bff50-8fe1-5926-bfff-923e2024908a
+    datasourceWarning: false
+  header_font_size: 0.4
+  subtitle_font_size: 0.15
+  show_metric_name: false
+  y_axis_format: ',.4f'
+  time_format: smart_date
+  conditional_formatting: []
+  annotation_layers: []
+query_context: null
+cache_timeout: 0
+uuid: c2f2a764-5c40-592c-818a-2d8f6282e77a
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

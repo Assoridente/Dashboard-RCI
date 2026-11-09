@@ -1,0 +1,184 @@
+slice_name: "Entregas por m\xEAs"
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 91__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 14256809
+  matrixify_enable: false
+  matrixify_mode_columns: disabled
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_all_sort_by_columns: a_to_z
+  matrixify_topn_order_columns: true
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_mode_rows: disabled
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_all_sort_by_rows: a_to_z
+  matrixify_topn_order_rows: true
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_charts_per_row: 4
+  matrixify_cell_title_template: ''
+  x_axis: mes_com_sprints
+  xAxisForceCategorical: false
+  x_axis_sort_asc: true
+  metrics:
+  - datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Entregues
+    optionName: metric_92197523-92f7-5ec8-8af1-6cf5ef62c9d7
+    sqlExpression: SUM(qeb)
+  - datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: "N\xE3o entregues"
+    optionName: metric_7149cd6c-eb3f-5c01-8def-66a3062639f4
+    sqlExpression: SUM(qtd_nao_entregue)
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_o8kownf7wbi_1vb4i2q7l4l
+  - expressionType: SIMPLE
+    subject: competencia
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_n0k77fiaxe_5twalb8pid8
+  group_others_when_limit_reached: false
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastEnabled: false
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title: ''
+  x_axis_title_margin: 0
+  y_axis_title: Itens de backlog
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  sort_series_ascending: false
+  color_scheme: supersetColors
+  time_shift_color: true
+  show_value: true
+  stack: null
+  only_total: true
+  percentage_threshold: 0
+  color_by_primary_axis: false
+  minorTicks: false
+  zoomable: false
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: '%m/%Y'
+  x_axis_number_format: ~g
+  xAxisLabelRotation: 0
+  xAxisLabelInterval: auto
+  y_axis_format: ',d'
+  logAxis: false
+  minorSplitLine: false
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: false
+  force_max_interval: false
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: false
+  tooltipSortByMetric: false
+  tooltipTimeFormat: smart_date
+  echart_options: '{}'
+  extra_form_data: {}
+  dashboards:
+  - 19
+query_context: "{\"datasource\":{\"id\":91,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"projeto_id\",\"op\":\"==\",\"val\":3},{\"col\"\
+  :\"competencia\",\"op\":\"TEMPORAL_RANGE\",\"val\":\"No filter\"}],\"extras\":{\"\
+  having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[{\"columnType\"\
+  :\"BASE_AXIS\",\"sqlExpression\":\"mes_com_sprints\",\"label\":\"mes_com_sprints\"\
+  ,\"expressionType\":\"SQL\",\"isColumnReference\":true}],\"metrics\":[{\"datasourceWarning\"\
+  :false,\"expressionType\":\"SQL\",\"hasCustomLabel\":true,\"label\":\"Entregues\"\
+  ,\"optionName\":\"metric_92197523-92f7-5ec8-8af1-6cf5ef62c9d7\",\"sqlExpression\"\
+  :\"SUM(qeb)\"},{\"datasourceWarning\":false,\"expressionType\":\"SQL\",\"hasCustomLabel\"\
+  :true,\"label\":\"N\xE3o entregues\",\"optionName\":\"metric_7149cd6c-eb3f-5c01-8def-66a3062639f4\"\
+  ,\"sqlExpression\":\"SUM(qtd_nao_entregue)\"}],\"orderby\":[[{\"datasourceWarning\"\
+  :false,\"expressionType\":\"SQL\",\"hasCustomLabel\":true,\"label\":\"Entregues\"\
+  ,\"optionName\":\"metric_92197523-92f7-5ec8-8af1-6cf5ef62c9d7\",\"sqlExpression\"\
+  :\"SUM(qeb)\"},false]],\"annotation_layers\":[],\"row_limit\":1000,\"series_columns\"\
+  :[],\"series_limit\":0,\"group_others_when_limit_reached\":false,\"order_desc\"\
+  :true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"time_offsets\"\
+  :[],\"post_processing\":[{\"operation\":\"pivot\",\"options\":{\"index\":[\"mes_com_sprints\"\
+  ],\"columns\":[],\"aggregates\":{\"Entregues\":{\"operator\":\"mean\"},\"N\xE3o\
+  \ entregues\":{\"operator\":\"mean\"}},\"drop_missing_columns\":false}},{\"operation\"\
+  :\"flatten\"}]}],\"form_data\":{\"datasource\":\"91__table\",\"viz_type\":\"echarts_timeseries_bar\"\
+  ,\"slice_id\":14256809,\"matrixify_enable\":false,\"matrixify_mode_columns\":\"\
+  disabled\",\"matrixify_dimension_selection_mode_columns\":\"members\",\"matrixify_dimension_columns\"\
+  :{\"dimension\":\"\",\"values\":[]},\"matrixify_topn_value_columns\":10,\"matrixify_all_sort_by_columns\"\
+  :\"a_to_z\",\"matrixify_topn_order_columns\":true,\"matrixify_show_column_headers\"\
+  :true,\"matrixify_fit_columns_dynamically\":true,\"matrixify_mode_rows\":\"disabled\"\
+  ,\"matrixify_dimension_selection_mode_rows\":\"members\",\"matrixify_dimension_rows\"\
+  :{\"dimension\":\"\",\"values\":[]},\"matrixify_topn_value_rows\":10,\"matrixify_all_sort_by_rows\"\
+  :\"a_to_z\",\"matrixify_topn_order_rows\":true,\"matrixify_show_row_labels\":true,\"\
+  matrixify_row_height\":300,\"matrixify_charts_per_row\":4,\"matrixify_cell_title_template\"\
+  :\"\",\"x_axis\":\"mes_com_sprints\",\"xAxisForceCategorical\":false,\"x_axis_sort_asc\"\
+  :true,\"metrics\":[{\"datasourceWarning\":false,\"expressionType\":\"SQL\",\"hasCustomLabel\"\
+  :true,\"label\":\"Entregues\",\"optionName\":\"metric_92197523-92f7-5ec8-8af1-6cf5ef62c9d7\"\
+  ,\"sqlExpression\":\"SUM(qeb)\"},{\"datasourceWarning\":false,\"expressionType\"\
+  :\"SQL\",\"hasCustomLabel\":true,\"label\":\"N\xE3o entregues\",\"optionName\":\"\
+  metric_7149cd6c-eb3f-5c01-8def-66a3062639f4\",\"sqlExpression\":\"SUM(qtd_nao_entregue)\"\
+  }],\"groupby\":[],\"adhoc_filters\":[{\"expressionType\":\"SIMPLE\",\"subject\"\
+  :\"projeto_id\",\"operator\":\"==\",\"comparator\":3,\"clause\":\"WHERE\",\"sqlExpression\"\
+  :null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\":false,\"filterOptionName\"\
+  :\"filter_o8kownf7wbi_1vb4i2q7l4l\"},{\"expressionType\":\"SIMPLE\",\"subject\"\
+  :\"competencia\",\"operator\":\"TEMPORAL_RANGE\",\"comparator\":\"No filter\",\"\
+  clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\"\
+  :false,\"filterOptionName\":\"filter_n0k77fiaxe_5twalb8pid8\"}],\"group_others_when_limit_reached\"\
+  :false,\"row_limit\":1000,\"truncate_metric\":true,\"show_empty_columns\":true,\"\
+  comparison_type\":\"values\",\"annotation_layers\":[],\"forecastEnabled\":false,\"\
+  forecastPeriods\":10,\"forecastInterval\":0.8,\"orientation\":\"vertical\",\"x_axis_title\"\
+  :\"\",\"x_axis_title_margin\":0,\"y_axis_title\":\"Itens de backlog\",\"y_axis_title_margin\"\
+  :15,\"y_axis_title_position\":\"Left\",\"sort_series_type\":\"sum\",\"sort_series_ascending\"\
+  :false,\"color_scheme\":\"supersetColors\",\"time_shift_color\":true,\"show_value\"\
+  :true,\"stack\":null,\"only_total\":true,\"percentage_threshold\":0,\"color_by_primary_axis\"\
+  :false,\"minorTicks\":false,\"zoomable\":false,\"show_legend\":true,\"legendType\"\
+  :\"scroll\",\"legendOrientation\":\"top\",\"x_axis_time_format\":\"%m/%Y\",\"x_axis_number_format\"\
+  :\"~g\",\"xAxisLabelRotation\":0,\"xAxisLabelInterval\":\"auto\",\"y_axis_format\"\
+  :\",d\",\"logAxis\":false,\"minorSplitLine\":false,\"truncateYAxis\":false,\"y_axis_bounds\"\
+  :[null,null],\"truncateXAxis\":false,\"force_max_interval\":false,\"rich_tooltip\"\
+  :true,\"showTooltipTotal\":true,\"showTooltipPercentage\":false,\"tooltipSortByMetric\"\
+  :false,\"tooltipTimeFormat\":\"smart_date\",\"echart_options\":\"{}\",\"extra_form_data\"\
+  :{},\"dashboards\":[19],\"force\":false,\"result_format\":\"json\",\"result_type\"\
+  :\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}"
+cache_timeout: 0
+uuid: e4de21d6-3be4-5419-b0ad-e3ec1b12a140
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

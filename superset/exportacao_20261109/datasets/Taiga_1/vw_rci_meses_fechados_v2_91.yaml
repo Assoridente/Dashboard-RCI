@@ -1,0 +1,578 @@
+table_name: vw_rci_meses_fechados_v2
+main_dttm_col: competencia
+currency_code_column: null
+description: "RCI Salesforce por compet\xEAncia explicitamente fechada. Valores aprovados\
+  \ e preservados por vers\xE3o."
+default_endpoint: null
+offset: 0
+cache_timeout: 0
+catalog: db_taiga
+schema: rci_embratur
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 28a80528-6141-5528-a67d-f646fadf077b
+metrics:
+- metric_name: count
+  verbose_name: "Quantidade de compet\xEAncias"
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: ordem_competencia
+  verbose_name: "Ordem cronol\xF3gica"
+  metric_type: null
+  expression: ''
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: resultado_meta
+  verbose_name: Resultado da meta
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "CASE WHEN meta_095 THEN 'Meta alcan\xE7ada' ELSE 'Abaixo da meta' END"
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: mes_rotulo
+  verbose_name: "M\xEAs / ano abreviado"
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: LEFT(nome_mes, 3) || ' ' || TO_CHAR(competencia, 'YY')
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: fechado_em_brasilia
+  verbose_name: "Fechado em (Bras\xEDlia)"
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: TO_CHAR(fechado_em AT TIME ZONE 'America/Sao_Paulo', 'DD/MM/YYYY HH24:MI')
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: ultima_publicacao
+  verbose_name: "Carga de refer\xEAncia"
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP WITH TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: fechado_em
+  verbose_name: Fechado em
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP WITH TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: ano_mes
+  verbose_name: "M\xEAs / ano"
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qtd_item_falha
+  verbose_name: Itens com falha
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qtd_nao_entregue
+  verbose_name: "Itens n\xE3o entregues"
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qtd_impedimento
+  verbose_name: Itens com impedimento
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: rci_preciso
+  verbose_name: RCI sem arredondamento
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qda
+  verbose_name: "Dias de aus\xEAncia"
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: postos_trabalho
+  verbose_name: Postos de trabalho
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: versao_fechamento
+  verbose_name: "Vers\xE3o do fechamento"
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: nome_mes
+  verbose_name: "Nome do m\xEAs"
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: meta_095
+  verbose_name: "Meta alcan\xE7ada"
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qdu
+  verbose_name: "Dias \xFAteis"
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qib
+  verbose_name: Itens planejados
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: qeb
+  verbose_name: Itens entregues
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: competencia
+  verbose_name: "Compet\xEAncia"
+  is_dttm: true
+  is_active: true
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: iap
+  verbose_name: IAP
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: ano
+  verbose_name: Ano
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: ifb
+  verbose_name: IFB
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: projeto_id
+  verbose_name: Projeto
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: rci
+  verbose_name: RCI
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: ies
+  verbose_name: IES
+  is_dttm: false
+  is_active: true
+  type: NUMERIC
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: mes
+  verbose_name: "M\xEAs"
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: situacao
+  verbose_name: "Situa\xE7\xE3o"
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra:
+    warning_markdown: null
+- column_name: flags_vazias_significam_false
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: ausencias_conferidas
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: feriados_conferidos
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: falhas_nao_preenchidas
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: abertas_sem_flag
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: entregas_nao_preenchidas
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: sprints_abertas
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: sprints_fechadas
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: pendencias
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT[]
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: mes_com_sprints
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: sprints_do_mes
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+- column_name: motivo_revisao
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 6db20301-4ccd-43fb-b258-fd869624c340

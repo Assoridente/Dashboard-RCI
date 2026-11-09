@@ -40,4 +40,12 @@ O fechamento é apresentado em Brasília a partir de `fechado_em`. A expressão 
 
 Cadastre a view publicada como dataset físico, sincronize as colunas e crie as colunas calculadas necessárias. Configure os gráficos e o filtro com as expressões acima. Se a edição for aberta a partir do dashboard, remova filtros temporários herdados do mês antes de salvar a definição permanente do gráfico.
 
-Esta pasta documenta a configuração aplicada. Os arquivos de exportação anteriores a novembro guardados na pasta de trabalho pertencem a versões anteriores e não integram esta publicação como backup importável do estado atual.
+## Exportação de 09/11/2026
+
+`exportacao_20261109/` contém os YAMLs do layout, dos oito gráficos e do dataset exportados do painel. Foram conferidas as expressões `TRUNC(rci_preciso::numeric, 3)` da tabela e do cartão, além do formato `,.3f`.
+
+O arquivo `databases/Taiga_1.yaml` usa a URI de exemplo `postgresql+psycopg2://USUARIO:SENHA@HOST:5432/BANCO`. Os parâmetros extras de conexão foram esvaziados. Preencha a conexão com os valores do ambiente de destino antes da importação e mantenha credenciais fora do versionamento.
+
+Para importar, compacte o conteúdo de `exportacao_20261109`, preservando as pastas `charts`, `datasets`, `databases` e `dashboards` e o arquivo `metadata.yaml` na raiz do pacote. Use a importação de dashboards do Superset e confira o mapeamento da conexão, as permissões e o projeto. O schema e as views precisam estar instalados no PostgreSQL de destino.
+
+A restauração em outra instalação do Superset ainda requer validação no ambiente de destino. A exportação mantém os UUIDs para preservar as relações entre dashboard, gráficos e dataset.

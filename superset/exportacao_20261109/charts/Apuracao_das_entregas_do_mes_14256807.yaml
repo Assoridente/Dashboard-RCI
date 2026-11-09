@@ -1,0 +1,50 @@
+slice_name: "Apura\xE7\xE3o das entregas do m\xEAs"
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 91__table
+  slice_id: 14256800
+  viz_type: table
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+  extra_form_data: {}
+  dashboards:
+  - 19
+  query_mode: raw
+  all_columns:
+  - ano_mes
+  - qib
+  - qeb
+  - qtd_nao_entregue
+  - qtd_item_falha
+  groupby: []
+  metrics: []
+  percent_metrics: []
+  order_by_cols:
+  - '["ano_mes", false]'
+  row_limit: 1000
+  server_pagination: false
+  table_timestamp_format: '%d/%m/%Y %H:%M'
+  include_search: false
+  show_cell_bars: false
+  column_config:
+    rci:
+      d3NumberFormat: ',.2f'
+    iap:
+      d3NumberFormat: ',.4f'
+    qda:
+      d3NumberFormat: ',.1f'
+  conditional_formatting: []
+  annotation_layers: []
+query_context: null
+cache_timeout: 0
+uuid: 9b9bd912-b08a-5b95-9492-4168409c6588
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

@@ -1,0 +1,38 @@
+slice_name: IES
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 91__table
+  slice_id: 177
+  viz_type: big_number_total
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+  extra_form_data: {}
+  dashboards:
+  - 19
+  metric:
+    expressionType: SQL
+    sqlExpression: CASE WHEN COUNT(*) = 1 THEN MAX(ies) END
+    label: IES
+    hasCustomLabel: true
+    optionName: metric_2ca1870f-c986-5dd3-9d71-8c50ed011894
+    datasourceWarning: false
+  header_font_size: 0.4
+  subtitle_font_size: 0.15
+  show_metric_name: false
+  y_axis_format: ',.4f'
+  time_format: smart_date
+  conditional_formatting: []
+  annotation_layers: []
+query_context: null
+cache_timeout: 0
+uuid: 45e62b2f-16dd-5f60-b67a-5d4b08c80d34
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b

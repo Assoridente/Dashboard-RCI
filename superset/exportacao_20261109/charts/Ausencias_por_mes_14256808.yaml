@@ -1,0 +1,50 @@
+slice_name: "Aus\xEAncias por m\xEAs"
+description: "Compet\xEAncia mensal Salesforce. Fonte: fechamentos publicados; m\xEA\
+  s corrente n\xE3o \xE9 exibido."
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 91__table
+  slice_id: 14256799
+  viz_type: table
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: projeto_id
+    operator: ==
+    comparator: 3
+    clause: WHERE
+  extra_form_data: {}
+  dashboards:
+  - 19
+  query_mode: raw
+  all_columns:
+  - ano_mes
+  - qda
+  - qdu
+  - postos_trabalho
+  - iap
+  groupby: []
+  metrics: []
+  percent_metrics: []
+  order_by_cols:
+  - '["ano_mes", false]'
+  row_limit: 1000
+  server_pagination: false
+  table_timestamp_format: '%d/%m/%Y %H:%M'
+  include_search: false
+  show_cell_bars: false
+  column_config:
+    rci:
+      d3NumberFormat: ',.2f'
+    iap:
+      d3NumberFormat: ',.4f'
+    qda:
+      d3NumberFormat: ',.1f'
+  conditional_formatting: []
+  annotation_layers: []
+query_context: null
+cache_timeout: 0
+uuid: f51028f0-36bc-5208-808d-ff04ef2c2a74
+version: 1.0.0
+dataset_uuid: 28a80528-6141-5528-a67d-f646fadf077b
